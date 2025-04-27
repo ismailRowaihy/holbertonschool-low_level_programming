@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main -entry point
+ * print_alphabet-entry point
  * Return: Always 0
  *it does the thing
  */
