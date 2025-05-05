@@ -13,8 +13,8 @@ for (i = 0; i <= 10; i++)
 {
 for (j = 0; string[j]; j++)
 {
-putchar(string[j]);
+_putchar(string[j]);
 }
-putchar('\n');
+_putchar('\n');
 }
 }
