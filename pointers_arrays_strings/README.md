@@ -1,0 +1,1 @@
+POINTERS arraays strings
