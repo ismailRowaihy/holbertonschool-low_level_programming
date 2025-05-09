@@ -18,9 +18,9 @@ i /= 2;
 }
 else
 {
-i =( i + 1) / 2;
+i = (i + 1) / 2;
 }
-for (j =i;s[j];j++)
+for (j = i; s[j]; j++)
 {
 _putchar(s[j]);
 }
