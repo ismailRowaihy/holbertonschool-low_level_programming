@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * string_toupper -entry point
- *@str: string to check 
+ *@str: string to check
  * Return: Always 0
  *it does the thing
  */
