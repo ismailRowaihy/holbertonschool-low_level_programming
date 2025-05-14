@@ -15,5 +15,8 @@ for (i = 0; s[i]; i++)
 if (s[i] == c)
 return (&s[i]);
 }
+if (c == '\0')
+return (&s[i]);
+
 return (NULL);
 }
