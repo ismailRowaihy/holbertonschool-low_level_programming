@@ -9,16 +9,16 @@
  */
 int main(int argc, char *argv[])
 {
-  int i, t = 1;
- if (argc < 3)
-   {
-   printf("Error\n");
- return (1);
-   }
+int i, t = 1;
+if (argc < 3)
+{
+printf("Error\n");
+return (1);
+}
 for (i = 1; i < argc; i++)
 {
-  t *= atoi(argv[i]);
+t *= atoi(argv[i]);
 }
-printf ("%d\n",t); 
+printf("%d\n", t);
 return (0);
 }
