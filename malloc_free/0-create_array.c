@@ -16,11 +16,11 @@ char *newAr;
 if (size == 0)
 return (NULL);
 
-newAr = malloc(sizeof(char) * (size + 1));
+newAr = malloc(sizeof(char) * size);
 if (newAr == NULL)
 return (NULL);
 
-for (i = 0; i <= size; i++)
+for (i = 0; i < size; i++)
 {
 if (i == size)
 {
