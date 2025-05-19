@@ -16,7 +16,7 @@ char *newAr;
 if (size == 0)
 return (NULL);
 
-newAr = malloc(sizeof(char) * size + 1);
+newAr = malloc(sizeof(char) * (size + 1));
 if (newAr == NULL)
 return (NULL);
 
