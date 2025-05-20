@@ -3,12 +3,12 @@
 #include "main.h"
 /**
  * free_grid -entry point
- *@grid: 2d array grid 
+ *@grid: 2d array grid
  *@height: height of the grid
  * Return: Always 0
  *it does the thing
  */
-void free_grid(int **grid,int height)
+void free_grid(int **grid, int height)
 {
 int i;
 
