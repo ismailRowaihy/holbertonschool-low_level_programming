@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *malloc_checked -entry point
- *@b: size to allocate
+ * *string_nconcat -entry point
+ *@s1: first string
+ *@s2: second string
+ *@n: num of strings to append
  * Return: Always 0
  *it does the thing
  */
@@ -22,15 +24,14 @@ for (i = 0; s1[i]; i++)
 ;
 for (j = 0; s2[j]; j++)
 ;
- 
- if ( n >= j)
-   n = j;
- 
+
+if (n >= j)
+n = j;
+
 newStr = malloc(sizeof(char) * (i + n + 1));
 if (newStr == NULL)
 return (NULL);
 
- 
 for (k = 0; k < i ; k++)
 {
 newStr[k] = s1[k];
@@ -39,6 +40,6 @@ for (h = 0; h < n; k++, h++)
 {
 newStr[k] = s2[h];
 }
-newStr[k] = '\0'; 
+newStr[k] = '\0';
 return (newStr);
 }
