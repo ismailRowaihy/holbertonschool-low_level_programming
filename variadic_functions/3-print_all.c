@@ -37,7 +37,7 @@ holderF = va_arg(TheList, double);
 printf("%f", holderF);
 }
 
-if (format[i] == 's')
+while (format[i] == 's')
 {
 holderS = va_arg(TheList, char*);
 if (holderS == NULL)
