@@ -20,10 +20,10 @@ for (i = 1; i <= n; i++)
 {
 holder = va_arg(TheList, char*);
 
-if (separator == NULL || i == n)
-printf("%s", holder);
-else if (holder == NULL)
+if (holder == NULL)
 printf("(nil)");
+else if (separator == NULL || i == n)
+printf("%s", holder);
 else
 printf("%s%s", holder, separator);
 
