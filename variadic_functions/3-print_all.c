@@ -10,12 +10,9 @@ void print_all(const char *const format, ...)
 va_list TheList;
 unsigned int i = 0;
 char *holderS;
-int holderI;
-float holderF;
-char holderC;
 char *separator = "";
 va_start(TheList, format);
-while (format[i] != '\0' && format != NULL)
+while (format != NULL && format[i] != '\0')
 {
 if (format[i] == 'c' || format[i] == 'i' ||
 format[i] == 'f' || format[i] == 's')
@@ -26,16 +23,13 @@ separator = ", ";
 switch (format[i])
 {
 case 'c':
-holderC = va_arg(TheList, int);
-printf("%c", holderC);
+printf("%c", va_arg(TheList, int));
 break;
 case 'i':
-holderI = va_arg(TheList, int);
-printf("%d", holderI);
+printf("%d", va_arg(TheList, int));
 break;
 case 'f':
-holderF = va_arg(TheList, double);
-printf("%f", holderF);
+printf("%f", va_arg(TheList, double));
 break;
 case 's':
 holderS = va_arg(TheList, char *);
