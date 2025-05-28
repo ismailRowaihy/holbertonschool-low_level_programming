@@ -17,10 +17,14 @@ float holderF;
 char holderC;
 
 va_start(TheList, format);
-
+   
 while (format[i] != '\0')
 {
-
+  if( (format[i] == 'c' && i != 0) || (format[i] == 'i' && i != 0) ||
+     (format[i] == 'f' && i != 0) || (format[i] == 's' && i != 0) )
+    {
+    printf(", ");
+    }  
   switch (format[i])
     {
     case 'c':
@@ -45,8 +49,9 @@ while (format[i] != '\0')
       printf("%s",holderS);
       break;
     }
-  
-i++;
+   
+ 
+    i++;
 }
 printf("\n");
 va_end(TheList);
