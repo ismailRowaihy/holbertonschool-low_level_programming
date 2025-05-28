@@ -42,7 +42,7 @@ if (holderS == NULL)
 printf("(nil)");
 break;
 }
-printf("%s", holderS)
+printf("%s", holderS);
 break;
 }
 i++;
