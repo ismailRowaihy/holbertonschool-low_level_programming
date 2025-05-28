@@ -13,13 +13,15 @@ char *holderS;
 int holderI;
 float holderF;
 char holderC;
+char *separator = "";
 va_start(TheList, format);
 while (format[i] != '\0' && format != NULL)
 {
-if ((format[i] == 'c' && i != 0) || (format[i] == 'i' && i != 0) ||
-(format[i] == 'f' && i != 0) || (format[i] == 's' && i != 0))
+if (format[i] == 'c' || format[i] == 'i' ||
+format[i] == 'f' || format[i] == 's')
 {
-printf(", ");
+printf("%s", separator);
+separator = ", ";
 }
 switch (format[i])
 {
