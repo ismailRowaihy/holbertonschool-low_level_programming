@@ -34,18 +34,18 @@ return (NULL);
 node->len = i;
 node->next = NULL;
 
- if (*head == NULL)
-   {
-     *head = node;
-     return (node);
-   }
- else
-   {
-     while (check->next != NULL)
-       check = check->next;
+if (*head == NULL)
+{
+*head = node;
+return (node);
+}
+else
+{
+while (check->next != NULL)
+check = check->next;
 
-     check->next = node;
-   }
+check->next = node;
+}
 
 return (node);
 }
