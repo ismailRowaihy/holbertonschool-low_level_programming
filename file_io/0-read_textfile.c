@@ -31,7 +31,7 @@ return (0);
 
 readfile = read(fd, buffer, letters);
 
-count = write(1, buffer, readfile);
+count = write(STDOUT_FILENO, buffer, readfile);
 if (count == -1)
 return (0);
 
