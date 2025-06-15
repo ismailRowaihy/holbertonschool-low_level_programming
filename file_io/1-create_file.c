@@ -26,6 +26,8 @@ fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
 
+if (text_content != NULL)
+{
 buffer = malloc(sizeof(strlen(text_content)));
 if (buffer == NULL)
 return (-1);
@@ -35,6 +37,7 @@ buffer = text_content;
 writefile = write(fd, buffer, strlen(text_content));
 if (writefile == -1)
 return (-1);
+}
 
 close(fd);
 return (1);
