@@ -30,6 +30,8 @@ buffer = malloc(sizeof(strlen(text_content)));
 if (buffer == NULL)
 return (-1);
 
+ buffer = text_content;
+ 
 writefile = write(fd, buffer, strlen(text_content));
 if (writefile == -1)
 return (-1);
