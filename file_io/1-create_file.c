@@ -22,7 +22,7 @@ char *buffer;
 if (filename == NULL)
 return (-1);
 
-fd = open(filename, O_RDWR | O_CREAT, 0600);
+fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
 
@@ -30,8 +30,8 @@ buffer = malloc(sizeof(strlen(text_content)));
 if (buffer == NULL)
 return (-1);
 
- buffer = text_content;
- 
+buffer = text_content;
+
 writefile = write(fd, buffer, strlen(text_content));
 if (writefile == -1)
 return (-1);
